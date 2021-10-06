@@ -1,0 +1,5 @@
+node_modules
+.next
+.env
+styles
+pages/_app.js
