@@ -1,3 +1,5 @@
+import Database from '../../../lib/Database.js';
+
 export default async function handler(req, res) {
 	let db = new Database();
 	let { pkgName, id, user, key } = req.query;
