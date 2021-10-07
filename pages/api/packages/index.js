@@ -1,14 +1,5 @@
-function Index() {
-	return (
-		<>
-		</>
-	)
+export default async function handler(req, res) {
+	res.statusCode = 200;
+	res.setHeader('Content-Type', 'application/json');
+	res.end(JSON.stringify({ message: 'Welcome to the RBX Cloud Package API!' }));
 }
-
-export async function getServerSideProps(ctx) {
-	return {
-		props: {}
-	}
-}
-
-export default Index;
